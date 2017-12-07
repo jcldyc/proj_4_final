@@ -1,0 +1,50 @@
+README
+
+Project 4 - cs4280
+
+Your fourth part of the project is to traverse the tree and generate code.  The output is a text
+file (so you can hand check it) containing assembly language commands, their arguments (if
+any), linker-loader instructions, and initializations of data space (if any).  On the webpage
+there is a link to an overview of the instructions and the linker/loader commands.
+The only 2 “unusual” statements are the
+assert
+and the
+bind
+.  For the
+assert
+statement,
+the expression is evaluated.  If expression is true, continue; if expression is false, halt.
+For the
+bind
+statement, the new variable [before the word
+to
+gets the same address (and
+the same type) as the variable or field reference to the right.
+Note that the only way to exit a
+loop
+is to use one of the two
+exit
+statements; they exit
+the innermost loop, either unconditionally or if the condition is true.
+Note that the
+not=
+operator is the boolean test for ‘Not Equal’.  Also note that there are
+only 2 conditions in the machine language:  ‘Equal 0’ and ‘LessThan 0’; this (with the rules
+of algebra of comparisons) is sufficient.
+I have written an emulator for the machine;  in the usual place,  there is a command
+run
+.
+Any command line arguments are taken to be text files with assembly instructions in the
+LINK-LOAD format specified.  On the same webpage as the machine instructions there is
+a page with (most) of the interactive commands for the debugging of programs within this
+command.
+If you want more information, the
+doc
+subdirectory in the usual place has documents on the
+machine.  Each file is in three forms:  a L
+A
+T
+E
+Xfile, which is (pretty much) readable, and a pdf
+file, which is printable in the usual way.
+
